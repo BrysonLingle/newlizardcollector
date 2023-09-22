@@ -1,6 +1,23 @@
-{% load static %}
+
+{% extends 'base.html' %}
+{% block content %}
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lizard Collector</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+</head>
+<body>
+  <header class="navbar-fixed">
+    <li><a href="/about">About</a></li>
+
+<li><a href="/all_lizard">View All My Lizards</a></li>
 <html>
+    
 <head>
     <title>All Lizards</title>
 </head>
@@ -18,3 +35,4 @@
     </ul>
 </body>
 </html>
+{% endblock %}
