@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Lizards</title>
+</head>
+<body>
+    <h1>All Lizards</h1>
+    <ul>
+        {% for lizard in lizard_data %}
+            <li>
+                <strong>Name:</strong> {{ lizard.name }}<br>
+                <strong>Color:</strong> {{ lizard.color }}<br>
+                <strong>Size:</strong> {{ lizard.size }}<br>
+                <strong>Description:</strong> {{ lizard.description }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
