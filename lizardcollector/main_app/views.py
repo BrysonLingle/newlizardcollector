@@ -27,5 +27,13 @@ def all_lizards(request):
     return render(request,'lizard.html',{'lizard': lizard_data})
 
 def home(request):
-   return render(request, 'main_app/home.html')
+   return render(request, 'home.html')  
+
+
+def lizards_index(request):
+    
+    return render(request, 'lizards/index.html', {'lizards': lizards})
+
+
+
 
