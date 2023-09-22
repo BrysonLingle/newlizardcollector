@@ -21,18 +21,16 @@ def about(request):
     return render(request, 'about.html')
 
 def all_lizards(request):
-    return render(request, 'all_lizards_html')
+    return render(request, 'all_lizard.html', {'lizard_data': lizard_data})
 
-def all_lizards(request):
-    return render(request,'lizard.html',{'lizard': lizard_data})
 
 def home(request):
    return render(request, 'home.html')  
 
 
-def lizards_index(request):
+# def lizards_index(request):
     
-    return render(request, 'lizards/index.html', {'lizards': lizards})
+#     return render(request, 'lizards/index.html', {'lizards': lizards})
 
 
 
