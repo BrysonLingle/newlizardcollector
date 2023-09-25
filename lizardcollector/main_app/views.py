@@ -29,6 +29,10 @@ def all_lizards(request):
 def home(request):
    return render(request, 'home.html')  
 
+def lizards_detail(request, lizard_id):
+    lizard = Lizard.objects.get(id=lizard_id)
+    return render(request, 'lizards/detail.html', {'lizard': lizard})
+
 
 # def lizards_index(request):
     

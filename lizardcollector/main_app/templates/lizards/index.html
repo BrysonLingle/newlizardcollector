@@ -4,18 +4,20 @@
 <h1>Lizard List</h1>
 
 {% for lizard in lizards %}
-  <div class="card">
-    <div class="card-content">
-      <span class="card-title">{{ lizard.name }}</span>
-      <p>color: {{ lizard.color }}</p>
-      <p>Description: {{ lizard.discription }}</p>
-      {% if lizard.size > 0 %}
-        <p>Size: {{ lizard.size }}</p>
-      {% else %}
-        <p>Size: small</p>
-      {% endif %}
+<a href="/lizards/{{lizard.id}}">
+    <div class="card">
+        <div class="card-content">
+        <span class="card-title">{{ lizard.name }}</span>
+        <p>color: {{ lizard.color }}</p>
+        <p>Description: {{ lizard.discription | linebreaks }}</p>
+        {% if lizard.size > 0 %}
+            <p>Size: {{ lizard.size }}</p>
+        {% else %}
+            <p>Size: small</p>
+        {% endif %}
+        </div>
     </div>
-  </div>
+  </a>
 {% endfor %}
 
 {% endblock %}

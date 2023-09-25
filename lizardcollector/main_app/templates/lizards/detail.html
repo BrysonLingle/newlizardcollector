@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Lizard Details</h1>
+
+<div class="card">
+    <div class="card-content">
+    <span class="card-title">{{ lizard.name }}</span>
+    <p>color: {{ lizard.color }}</p>
+    <p>Description: {{ lizard.discription | linebreaks }}</p>
+    {% if lizard.size > 0 %}
+        <p>Size: {{ lizard.size }}</p>
+    {% else %}
+        <p>Size: small</p>
+    {% endif %}
+    </div>
+</div>
+
+{% endblock %}
