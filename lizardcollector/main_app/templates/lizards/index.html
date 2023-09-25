@@ -7,12 +7,12 @@
   <div class="card">
     <div class="card-content">
       <span class="card-title">{{ lizard.name }}</span>
-      <p>Breed: {{ lizard.breed }}</p>
-      <p>Description: {{ lizard.description }}</p>
-      {% if lizard.age > 0 %}
-        <p>Age: {{ lizard.age }}</p>
+      <p>color: {{ lizard.color }}</p>
+      <p>Description: {{ lizard.discription }}</p>
+      {% if lizard.size > 0 %}
+        <p>Size: {{ lizard.size }}</p>
       {% else %}
-        <p>Age: small</p>
+        <p>Size: small</p>
       {% endif %}
     </div>
   </div>
