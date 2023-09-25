@@ -7,13 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Lizard Collector</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
+  {% block header %}
   <header class="navbar-fixed">
-    <li><a href="/about">About</a></li>
+    <!-- <li><a href="/about">About</a></li>
 
-<li><a href="/all_lizard">View All My Lizards</a></li>
+<li><a href="/all_lizard">View All My Lizards</a></li> -->
 
     <nav>
       <div class="nav-wrapper">
@@ -27,12 +28,19 @@
       </div>
     </nav>
   </header>
+  {% endblock %}
   <main class="container">
     {% block content %}
     {% endblock %}
   </main>
   <footer class="page-footer">
-    <div class="right">All Rights Reserved, &copy; 2023 lizard Collector &nbsp;</div>
+    <div class="right">All Rights Reserved, &copy; 2021 Cat Collector &nbsp;</div>
   </footer>
 </body>
 </html>
+
+
+
+
+
+

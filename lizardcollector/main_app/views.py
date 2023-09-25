@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from .models import Lizard
 
 lizard_data = [
     {
@@ -21,6 +21,7 @@ def about(request):
     return render(request, 'about.html')
 
 def all_lizards(request):
+    # lizard_data = Lizard.objects.all()
     return render(request, 'all_lizard.html', {'lizard_data': lizard_data})
 
 

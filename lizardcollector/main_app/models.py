@@ -6,3 +6,5 @@ class Lizard (models.Model):
     discription = models.TextField(max_length=250)
     size = models.IntegerField()
     
+    def __str__(self):
+        return f'{self.name} ({self.id})'
