@@ -7,4 +7,5 @@ urlpatterns = [
     path('all_lizard/', views.all_lizards, name='all_lizards'),
     path('', views.home, name='home'),  
     path('lizards/<int:lizard_id>/', views.lizards_detail, name='detail')
+    path('lizards/create/', views.LizardCreate.as_view, name='lizards_create')
 ]

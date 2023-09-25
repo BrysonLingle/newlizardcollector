@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Lizard
-
+from django .views.generic.edit import CreateView
 # lizard_data = [
 #     {
 #         'name': 'Green Anole',
@@ -38,6 +38,8 @@ def lizards_detail(request, lizard_id):
     
 #     return render(request, 'lizards/index.html', {'lizards': lizards})
 
-
+class LizardCreate(CreateView):
+    model = Lizard 
+    fields = 
 
 
